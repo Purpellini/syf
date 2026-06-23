@@ -1,25 +1,8 @@
-/* ==========================================================================
-   Reset domyślnych styli GamepadViewera (wymagany, aby nie nakładać grafik)
-   ========================================================================== */
-.controller.playstation4 .base,
-.controller.playstation4 .face,
-.controller.playstation4 .sticks,
-.controller.playstation4 .stick,
-.controller.playstation4 .bumper,
-.controller.playstation4 .trigger,
-.controller.playstation4 .touchpad,
-.controller.playstation4 .meta,
-.controller.playstation4 .button {
-    background-image: none !important;
-}
-
-/* ==========================================================================
-   Twoje oryginalne style (klasy zachowane w 100% bez zmian)
-   ========================================================================== */
-
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(ps4-assets/base.svg) !important;
+    /* Podmiana samego tła głównego na Wasz plik z NieR */
+    background: url('https://purpellini.github.io/syf/nieeeeer.png') no-repeat center !important;
+    background-size: contain !important;
     height: 598px;
     width: 806px;
     /* margin-left: -403px;
@@ -27,7 +10,7 @@
 }
 
 .ds4.disconnected {
-    background: url(ps4-assets/disconnected.svg) !important;
+    background: url(ps4-assets/disconnected.svg);
 }
 
 .ds4.disconnected div {
@@ -44,7 +27,7 @@
 .ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(ps4-assets/triggers.svg) !important;
+    background: url(ps4-assets/triggers.svg);
     opacity: 0;
 }
 
@@ -60,7 +43,7 @@
 .ds4 .bumper {
     width: 99px;
     height: 23px;
-    background: url(ps4-assets/bumper.svg) no-repeat !important;
+    background: url(ps4-assets/bumper.svg) no-repeat;
     opacity: 0;
 }
 
@@ -96,7 +79,7 @@
 }
 
 .ds4 .touchpad.pressed {
-    background: url(ps4-assets/touchpad.svg) no-repeat center !important;
+    background: url(ps4-assets/touchpad.svg) no-repeat center;
 }
 
 .ds4 .meta {
@@ -108,7 +91,7 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(ps4-assets/meta.svg) no-repeat center !important;
+    background: url(ps4-assets/meta.svg) no-repeat center;
 }
 
 .ds4 .arrows {
@@ -119,16 +102,14 @@
     left: 227px;
 }
 
-.ds4 .back,
-.ds4 .start {
-    background: url(ps4-assets/start.svg) !important;
+.ds4 .back, .ds4 .start {
+    background: url(ps4-assets/start.svg);
     width: 28px;
     height: 46px;
     opacity: 0;
 }
 
-.ds4 .back.pressed,
-.ds4 .start.pressed {
+.ds4 .back.pressed, .ds4 .start.pressed {
     /* background-position-y: -21px; */
     /* margin-top: 2px; */
     opacity: 1;
@@ -157,7 +138,7 @@
     position: absolute;
     width: 55px;
     height: 55px;
-    background: url(ps4-assets/face.svg) !important;
+    background: url(ps4-assets/face.svg);
 }
 
 .ds4 .button.pressed {
@@ -197,7 +178,7 @@
 
 .ds4 .stick {
     position: absolute;
-    background: url(ps4-assets/sticks.svg) !important;
+    background: url(ps4-assets/sticks.svg);
     height: 94px;
     width: 94px;
 }
@@ -229,18 +210,16 @@
 }
 
 .ds4 .face {
-    background: url(ps4-assets/dpad.svg) !important;
+    background: url(ps4-assets/dpad.svg);
     position: absolute;
 }
 
-.ds4 .face.up,
-.ds4 .face.down {
+.ds4 .face.up, .ds4 .face.down {
     width: 36px;
     height: 52px;
 }
 
-.ds4 .face.left,
-.ds4 .face.right {
+.ds4 .face.left, .ds4 .face.right {
     width: 52px;
     height: 36px;
 }
@@ -277,5 +256,4 @@
 .ds4.half {
     margin-top: -300px;
 }
-
 /*END PS4 Controller Styling*/
