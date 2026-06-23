@@ -1,0 +1,273 @@
+/* ==========================================================================
+   Modyfikacja pod GamepadViewer - Reset domyślnych grafik aplikacji
+   ========================================================================== */
+.controller.playstation4 .base,
+.controller.playstation4 .face,
+.controller.playstation4 .sticks,
+.controller.playstation4 .stick,
+.controller.playstation4 .bumper,
+.controller.playstation4 .trigger,
+.controller.playstation4 .touchpad,
+.controller.playstation4 .meta,
+.controller.playstation4 .button {
+    background-image: none !important;
+}
+
+/* ==========================================================================
+   Główny Kontroler PS4
+   ========================================================================== */
+.controller.playstation4 {
+    background: url(https://purpellini.github.io/syf/nieeeeer.pngg) no-repeat center !important;
+    height: 598px !important;
+    width: 806px !important;
+}
+
+.controller.playstation4.disconnected {
+    background: url(ps4-assets/disconnected.svg) no-repeat center !important;
+}
+
+.controller.playstation4.disconnected div {
+    display: none !important;
+}
+
+/* Triggery i Bumpery */
+.controller.playstation4 .triggers {
+    width: 588px;
+    height: 90px;
+    position: absolute;
+    left: 109px;
+}
+
+.controller.playstation4 .trigger {
+    width: 99px;
+    height: 100%;
+    background: url(ps4-assets/triggers.svg) !important;
+    opacity: 0;
+}
+
+.controller.playstation4 .trigger.left {
+    float: left;
+}
+
+.controller.playstation4 .trigger.right {
+    float: right;
+    background-position-x: 99px !important;
+}
+
+.controller.playstation4 .bumpers {
+    position: absolute;
+    width: 588px;
+    height: 23px;
+    left: 109px;
+    top: 94px;
+}
+
+.controller.playstation4 .bumper {
+    width: 99px;
+    height: 23px;
+    background: url(ps4-assets/bumper.svg) no-repeat !important;
+    opacity: 0;
+}
+
+.controller.playstation4 .bumper.pressed {
+    opacity: 1 !important;
+}
+
+.controller.playstation4 .bumper.left {
+    float: left;
+}
+
+.controller.playstation4 .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+/* Touchpad i przycisk PS (Meta) */
+.controller.playstation4 .touchpad {
+    width: 262px;
+    height: 151px;
+    position: absolute;
+    left: 272px;
+    top: 122px;
+}
+
+.controller.playstation4 .touchpad.pressed {
+    background: url(ps4-assets/touchpad.svg) no-repeat center !important;
+}
+
+.controller.playstation4 .meta {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+}
+
+.controller.playstation4 .meta.pressed {
+    background: url(ps4-assets/meta.svg) no-repeat center !important;
+}
+
+/* Share / Options (Arrows) */
+.controller.playstation4 .arrows {
+    position: absolute;
+    width: 352px;
+    height: 46px;
+    top: 142px;
+    left: 227px;
+}
+
+.controller.playstation4 .back,
+.controller.playstation4 .start {
+    background: url(ps4-assets/start.svg) !important;
+    width: 28px;
+    height: 46px;
+    opacity: 0;
+}
+
+.controller.playstation4 .back.pressed,
+.controller.playstation4 .start.pressed {
+    opacity: 1 !important;
+}
+
+.controller.playstation4 .back {
+    float: left;
+}
+
+.controller.playstation4 .start {
+    float: right;
+    background-position: 28px 0 !important;
+}
+
+/* Przyciski Akcji (Krzyżyk, Kółko, Kwadrat, Trójkąt) */
+.controller.playstation4 .abxy {
+    position: absolute;
+    width: 170px;
+    height: 171px;
+    top: 159px;
+    left: 567px;
+}
+
+.controller.playstation4 .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(ps4-assets/face.svg) !important;
+}
+
+.controller.playstation4 .button.pressed {
+    background-position-y: 55px !important;
+}
+
+.controller.playstation4 .a {
+    background-position: 0 0 !important;
+    bottom: 0;
+    left: 58px;
+}
+
+.controller.playstation4 .b {
+    background-position: -57px 0 !important;
+    top: 58px;
+    right: 0px;
+}
+
+.controller.playstation4 .x {
+    background-position: -113px 0 !important;
+    top: 58px;
+}
+
+.controller.playstation4 .y {
+    background-position: 55px 0 !important;
+    left: 58px;
+}
+
+/* Analogi (Sticks) */
+.controller.playstation4 .sticks {
+    position: absolute;
+    width: 361px;
+    height: 105px;
+    top: 308px;
+    left: 228px;
+}
+
+.controller.playstation4 .stick {
+    position: absolute;
+    background: url(ps4-assets/sticks.svg) !important;
+    height: 94px;
+    width: 94px;
+}
+
+.controller.playstation4 .stick.pressed.left {
+    background-position-x: -96px !important;
+}
+
+.controller.playstation4 .stick.pressed.right {
+    background-position-x: -192px !important;
+}
+
+.controller.playstation4 .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.controller.playstation4 .stick.right {
+    top: calc(100% - 105px);
+    left: calc(100% - 105px);
+}
+
+/* D-Pad (Krzyżak) */
+.controller.playstation4 .dpad {
+    position: absolute;
+    width: 125px;
+    height: 126px;
+    top: 181px;
+    left: 92px;
+}
+
+.controller.playstation4 .face {
+    background: url(ps4-assets/dpad.svg) !important;
+    position: absolute;
+}
+
+.controller.playstation4 .face.up,
+.controller.playstation4 .face.down {
+    width: 36px;
+    height: 52px;
+}
+
+.controller.playstation4 .face.left,
+.controller.playstation4 .face.right {
+    width: 52px;
+    height: 36px;
+}
+
+.controller.playstation4 .face.up {
+    left: 44px;
+    top: 0;
+    background-position: -37px 0px !important;
+}
+
+.controller.playstation4 .face.down {
+    left: 44px;
+    bottom: 0;
+    background-position: 0px 0 !important;
+}
+
+.controller.playstation4 .face.left {
+    top: 45px;
+    left: 0;
+    background-position: 104px 0 !important;
+}
+
+.controller.playstation4 .face.right {
+    top: 45px;
+    right: 0px;
+    background-position: 52px 0 !important;
+}
+
+.controller.playstation4 .face.pressed {
+    background-position-y: 52px !important;
+}
+
+.controller.playstation4.half {
+    margin-top: -300px !important;
+}
