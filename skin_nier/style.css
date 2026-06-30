@@ -1,69 +1,53 @@
-/* 1. Podmiana tła obudowy pada na grafikę z NieR (nieeeeer.jpg) */
+/* 1. Nakładamy Twój przezroczysty obrazek jako główne tło kontrolera */
 .controller.ds4.white {
   background-image: url('https://purpellini.github.io/syf/nieeeeer.png') !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-color: transparent !important;
 }
 
-/* 2. Touchpad - oryginalnie jest fioletowy i zasłoniłby środek grafiki. 
-      Robimy go przezroczystym, żeby było widać tło (grafikę) pod nim */
-.ds4.white .touchpad,
-.ds4.white .touchpad.pressed {
+/* 2. Całkowicie wyłączamy fioletowe nakładki z oryginalnego skina, 
+      żeby nic się nie rozjeżdżało i nie nakładało na Twoje triggery/analogi */
+.ds4.white .base,
+.ds4.white .stick,
+.ds4.white .face,
+.ds4.white .bumper,
+.ds4.white .trigger,
+.ds4.white .touchpad.pressed,
+.ds4.white .back, 
+.ds4.white .start {
+  display: none !important;
+}
+
+/* 3. Mapowanie i podświetlenie fizycznych przycisków przy kliknięciu (pozycja z GamepadViewera) */
+.controller.ds4 .button {
   background-image: none !important;
   background-color: transparent !important;
 }
 
-/* 3. D-Pad (Krzyżak) - usuwamy fioletowe strzałki, żeby nie gryzły się z grafiką.
-      Możesz ustawić im delikatny, ciemny kolor pasujący do klimatu */
-.ds4.white .face {
-  background-image: none !important;
-  background-color: rgba(0, 0, 0, 0.15) !important;
-  border-radius: 50% !important;
-}
-
-/* 4. Przyciski Options / Share - usuwamy fioletowy kolor */
-.ds4.white .back,
-.ds4 .start {
-  background-image: none !important;
-  background-color: #333333 !important;
-  /* Ciemnoszary/czarny jak w prawdziwym padzie */
-  border-radius: 4px !important;
-}
-
-/* 5. Triggery i Bumpery (L1, R1, L2, R2) - zmieniamy fiolet na czarny/ciemnoszary */
-.ds4.white .bumper,
-.ds4.white .trigger {
-  background-image: none !important;
-  background-color: #222222 !important;
-}
-
-/* 6. Kolory przycisków geometrycznych (podświetlenie dopasowane do ikonek z nieeeeer.jpg) */
+/* Kolory poświaty dopasowane do ikonek PlayStation z Twojego obrazka */
 .controller.ds4 .button.triangle {
-  border-color: #56af7b !important;
-  /* Zielony trójkąt */
-  box-shadow: 0 0 8px #56af7b;
+  border: 2px solid #56af7b !important; /* Zielony */
+  box-shadow: 0 0 8px #56af7b !important;
 }
 
 .controller.ds4 .button.circle {
-  border-color: #b84343 !important;
-  /* Czerwone kółko */
-  box-shadow: 0 0 8px #b84343;
+  border: 2px solid #b84343 !important; /* Czerwony */
+  box-shadow: 0 0 8px #b84343 !important;
 }
 
 .controller.ds4 .button.cross {
-  border-color: #4a75a0 !important;
-  /* Niebieski krzyżyk */
-  box-shadow: 0 0 8px #4a75a0;
+  border: 2px solid #4a75a0 !important; /* Niebieski */
+  box-shadow: 0 0 8px #4a75a0 !important;
 }
 
 .controller.ds4 .button.square {
-  border-color: #b5539d !important;
-  /* Różowy kwadrat */
-  box-shadow: 0 0 8px #b5539d;
+  border: 2px solid #b5539d !important; /* Różowy */
+  box-shadow: 0 0 8px #b5539d !important;
 }
 
-/* Efekt wizualny po wciśnięciu przycisku geometrycznego */
+/* Delikatny błysk wewnątrz przycisku w momencie wciśnięcia */
 .controller.ds4 .button.pressed {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
 }
