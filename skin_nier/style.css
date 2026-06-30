@@ -1,0 +1,107 @@
+.controller.ds4.white {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/base.svgz) !important;
+}
+
+.ds4.white .stick {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/sticks.svgz) !important;
+}
+
+.ds4.white .face {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/dpad.svgz) !important;
+}
+
+.ds4.white .bumper {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/bumper.svgz) !important;
+}
+
+.ds4.white .trigger {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/triggers.svgz) !important;
+}
+
+.ds4.white .touchpad.pressed {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/touchpad.svgz) !important;
+}
+
+.ds4.white .back,
+.ds4.white .start {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/start.svgz) !important;
+}
+
+/* ===========================================================
+   Kolory poświaty przycisków ABXY dopasowane do ikonek
+   FIX: dodano border-radius:50%, bo border/box-shadow domyślnie
+   rysują się po kwadratowym boxie diva, nie po okrągłym kształcie
+   przycisku — bez tego poświata wychodziła jako kwadrat.
+   =========================================================== */
+.controller.ds4 .button {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.controller.ds4 .button.triangle {
+  border-radius: 50% !important;
+  border: 2px solid #56af7b !important;
+  box-shadow: 0 0 8px #56af7b !important;
+}
+
+.controller.ds4 .button.circle {
+  border-radius: 50% !important;
+  border: 2px solid #b84343 !important;
+  box-shadow: 0 0 8px #b84343 !important;
+}
+
+.controller.ds4 .button.cross {
+  border-radius: 50% !important;
+  border: 2px solid #4a75a0 !important;
+  box-shadow: 0 0 8px #4a75a0 !important;
+}
+
+.controller.ds4 .button.square {
+  border-radius: 50% !important;
+  border: 2px solid #b5539d !important;
+  box-shadow: 0 0 8px #b5539d !important;
+}
+
+/* ===========================================================
+   FIX: D-pad (góra/dół/lewo/prawo) w ogóle się nie podświetlał,
+   bo w oryginalnym pliku nie było reguł CSS dla tych klas.
+   Gamepad Viewer renderuje strzałki d-padu jako osobne .button
+   z klasami .up / .down / .left / .right, niezależnie od .face
+   (które odpowiada tylko za statyczne tło z dpad.svgz).
+   border-radius mniejszy, bo strzałki są kwadratowe/prostokątne,
+   nie okrągłe jak ABXY.
+   =========================================================== */
+.controller.ds4 .button.up,
+.controller.ds4 .button.down,
+.controller.ds4 .button.left,
+.controller.ds4 .button.right {
+  background-image: none !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+  border: 2px solid #d4af37 !important;
+  box-shadow: 0 0 8px #d4af37 !important;
+}
+
+/* ===========================================================
+   FIX: Triggery (L2/R2) świeciły się tylko górną częścią.
+   border/box-shadow rysują się po całym prostokątnym boxie diva,
+   a kształt triggera w triggers.svgz jest zaokrąglony i węższy
+   u dołu — przez co część obwódki była wizualnie "ucinana" albo
+   nie pokrywała się z widocznym kształtem grafiki.
+   filter:drop-shadow podąża za realnym kształtem (kanałem alfa)
+   obrazka w tle, więc poświata dokładnie kopiuje kontur triggera
+   zamiast prostokąta.
+   =========================================================== */
+.controller.ds4 .trigger {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.controller.ds4 .trigger.pressed {
+  filter: drop-shadow(0 0 8px #d4af37) !important;
+}
+
+/* Błysk przycisku w momencie fizycznego wciśnięcia */
+.controller.ds4 .button.pressed {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
