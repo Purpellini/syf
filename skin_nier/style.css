@@ -1,0 +1,59 @@
+.controller.ds4.white {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/base.svgz) !important;
+}
+
+.ds4.white .stick {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/sticks.svgz) !important;
+}
+
+.ds4.white .face {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/dpad.svgz) !important;
+}
+
+.ds4.white .bumper {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/bumper.svgz) !important;
+}
+
+.ds4.white .trigger {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/triggers.svgz) !important;
+}
+
+.ds4.white .touchpad.pressed {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/touchpad.svgz) !important;
+}
+
+.ds4.white .back,
+.ds4.white .start {
+  background-image: url(https://purpellini.github.io/syf/skin_nier/svgs/start.svgz) !important;
+}
+
+/* Kolory poświaty przycisków dopasowane do ikonek z Twojego malowania pada */
+.controller.ds4 .button {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.controller.ds4 .button.triangle {
+  border: 2px solid #56af7b !important;
+  box-shadow: 0 0 8px #56af7b !important;
+}
+
+.controller.ds4 .button.circle {
+  border: 2px solid #b84343 !important;
+  box-shadow: 0 0 8px #b84343 !important;
+}
+
+.controller.ds4 .button.cross {
+  border: 2px solid #4a75a0 !important;
+  box-shadow: 0 0 8px #4a75a0 !important;
+}
+
+.controller.ds4 .button.square {
+  border: 2px solid #b5539d !important;
+  box-shadow: 0 0 8px #b5539d !important;
+}
+
+/* Błysk przycisku w momencie fizycznego wciśnięcia */
+.controller.ds4 .button.pressed {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}

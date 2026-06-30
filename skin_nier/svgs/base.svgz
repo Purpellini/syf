@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="806px" height="598.9px" viewBox="-556 241.1 806 598.9" style="enable-background:new -556 241.1 806 598.9;"
+     xml:space="preserve">
+<style type="text/css">
+    /* Ukrywamy domyślne warstwy kolorystyczne skina, aby odsłonić Twoje malowanie */
+    .st1, .st3, .st4, .st5, .st6, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st25, .st31, .st32 {
+        fill: transparent !important;
+        stroke: transparent !important;
+        opacity: 0 !important;
+    }
+</style>
+
+<image xlink:href="https://purpellini.github.io/syf/nieeeeer.png" x="-556" y="241.1" width="806px" height="598.9px" />
+
+<g style="opacity: 0 !important;">
+    <path class="st3" d="M245.3,659.8c-2.9-15.5-17.7-102.5-32-144.6c-9.4-27.7-13.1-53-17-64.9c-12-35.7-33-65.7-33-65.7s-9.5-13.1-10.1-16.3c-0.6-3.3-4.7-8.6-4.7-8.6s-17.4-5.7-62.3-5.7s-53.7,5-53.7,5s-2.4,2.9-5.9,4.8c-3.5,1.8-11.7,1.7-11.7,1.7h-33.4c0,0-0.6-0.1-0.9,0.3c-0.4,0.4-0.6,2-0.6,2h-133h-133.1c0,0-0.3-1.7-0.6-2c-0.4-0.4-0.9-0.3-0.9-0.3H-321c0,0-8.2,0.2-11.7-1.7c-3.5-1.8-5.9-4.8-5.9-4.8s-8.8-5-53.7-5c-44.8,0-62.3,5.7-62.3,5.7s-4.1,5.3-4.7,8.6c-0.6,3.3-10.1,16.3-10.1,16.3s-21,30-33,65.7c-4,11.9-7.7,37.2-17,64.9c-14.3,42.1-29.1,129.1-32,144.6c-4.3,23.2-4.7,90.1-4.7,90.1s4.5,53.4,36.2,74.9s56.7,14,56.7,14s33.1-8.2,57.8-41.9s56.6-129.2,56.6-129.2s2.2-3,5.7-5.3s6.3-2.6,6.3-2.6l183.7,0.1l183.7-0.1c0,0,2.8,0.3,6.3,2.6s5.7,5.3,5.7,5.3s31.9,95.4,56.6,129.2s57.8,41.9,57.8,41.9s25,7.5,56.7-14s36.2-74.9,36.2-74.9S249.7,682.9,245.3,659.8z"/>
+    <circle cx="-281.3" cy="597.1" r="51.5"/>
+    <circle cx="-24.7" cy="597.1" r="51.5"/>
+</g>
+</svg>
