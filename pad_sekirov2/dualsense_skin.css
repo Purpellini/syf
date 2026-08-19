@@ -118,20 +118,25 @@ body {
 
 .ds4 .bumpers {
     width: 620px;
-    height: 36px;
+    height: 46px;
     left: 90px;
-    top: 98px;
+    top: 94px;
 }
 
 .ds4 .bumper {
-    background: url(https://purpellini.github.io/syf/pad_sekirov2/bumper_red.png);
+    background-image: url(https://purpellini.github.io/syf/pad_sekirov2/bumper_red.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 114px;
-    height: 36px;
+    height: 43px;
     opacity: 0;
+    transform: rotate(3deg);
 }
 
 .ds4 .bumper.right {
     margin-right: 6px;
+    transform: rotate(26deg);
+
 }
 
 .ds4 .triggers {
