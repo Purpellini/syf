@@ -2,7 +2,7 @@
    NADZORCA GŁÓWNY (Baza PS4)
    ========================================= */
 .controller.ds4 {
-    background: url('LINK_DO_ZDJECIA.png') no-repeat !important;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
     background-position: -1px -1px !important; /* */
     width: 1344px !important; /*[cite: 1] */
     height: 788px !important; /*[cite: 1] */
