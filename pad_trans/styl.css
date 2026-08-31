@@ -7,230 +7,233 @@ body {
    BAZA KONTROLERA
    ========================================= */
 .controller.ds4 {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    background-position: -1px -1px;
-    width: 1344px;
-    height: 788px;
-    margin-left: 0;
-    margin-top: 0;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    background-position: -1px -1px !important;
+    width: 1344px !important;
+    height: 788px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
 }
 
-/* Ukrywamy touchpad i mały kwadracik "gracza", których nie potrzebujemy */
+/* Ukrywamy touchpad i mały kwadracik "gracza" */
 .ds4 .quadrant, .ds4 .touchpad {
-    display: none;
+    display: none !important;
 }
 
 /* =========================================
    GAŁKI ANALOGOWE
    ========================================= */
 .ds4 .sticks {
-    width: 578px;
-    height: 157px;
-    left: 389px;
-    top: 516px;
-    position: absolute;
+    width: 578px !important;
+    height: 157px !important;
+    left: 389px !important;
+    top: 516px !important;
+    position: absolute !important;
 }
 
 .ds4 .stick {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    background-position: -1359px -1px;
-    width: 157px;
-    height: 156px;
-    position: absolute;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    background-position: -1359px -1px !important;
+    width: 157px !important;
+    height: 156px !important;
+    position: absolute !important;
+    opacity: 1 !important; /* Gałki widoczne cały czas */
 }
 
 .ds4 .stick.left {
-    left: 0;
-    top: 1px;
+    left: 0 !important;
+    top: 1px !important;
 }
 
 .ds4 .stick.right {
-    left: 421px;
-    top: 0;
+    left: 421px !important;
+    top: 0 !important;
 }
 
 /* =========================================
    GŁÓWNE PRZYCISKI (Krzyżyk, Kółko, itd.)
    ========================================= */
 .ds4 .abxy {
-    width: 302px;
-    height: 265px;
-    left: 946px;
-    top: 257px;
-    position: absolute;
+    width: 302px !important;
+    height: 265px !important;
+    left: 946px !important;
+    top: 257px !important;
+    position: absolute !important;
 }
 
 .ds4 .button {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    position: absolute;
-    opacity: 0;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    position: absolute !important;
+    opacity: 0 !important; /* Ukryte domyślnie */
 }
 
 .ds4 .button.pressed {
-    opacity: 1;
-    margin-top: 0;
+    opacity: 1 !important; /* Pokazane po wciśnięciu */
+    margin-top: 0 !important;
 }
 
 .ds4 .a { /* Krzyżyk */
-    width: 99px; height: 91px;
-    background-position: 0px -792px;
-    left: 101px; top: 174px;
-    bottom: auto; right: auto;
+    width: 99px !important; height: 91px !important;
+    background-position: 0px -792px !important;
+    left: 101px !important; top: 174px !important;
+    bottom: auto !important; right: auto !important;
 }
 
 .ds4 .b { /* Kółko */
-    width: 98px; height: 90px;
-    background-position: -305px -792px;
-    left: 204px; top: 88px;
-    bottom: auto; right: auto;
+    width: 98px !important; height: 90px !important;
+    background-position: -305px -792px !important;
+    left: 204px !important; top: 88px !important;
+    bottom: auto !important; right: auto !important;
 }
 
 .ds4 .x { /* Kwadrat */
-    width: 98px; height: 90px;
-    background-position: -102px -793px;
-    left: 0px; top: 92px;
-    bottom: auto; right: auto;
+    width: 98px !important; height: 90px !important;
+    background-position: -102px -793px !important;
+    left: 0px !important; top: 92px !important;
+    bottom: auto !important; right: auto !important;
 }
 
 .ds4 .y { /* Trójkąt */
-    width: 99px; height: 91px;
-    background-position: -203px -792px;
-    left: 104px; top: 0px;
-    bottom: auto; right: auto;
+    width: 99px !important; height: 91px !important;
+    background-position: -203px -792px !important;
+    left: 104px !important; top: 0px !important;
+    bottom: auto !important; right: auto !important;
 }
 
 /* =========================================
    PRZYCISKI SYSTEMOWE (Share / Options)
    ========================================= */
 .ds4 .arrows {
-    width: 680px;
-    height: 66px;
-    left: 332px;
-    top: 225px;
-    position: absolute;
+    width: 680px !important;
+    height: 66px !important;
+    left: 332px !important;
+    top: 225px !important;
+    position: absolute !important;
 }
 
 .ds4 .back, .ds4 .start {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    position: absolute;
-    opacity: 0;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    position: absolute !important;
+    opacity: 0 !important; /* Ukryte domyślnie */
 }
 
 .ds4 .back.pressed, .ds4 .start.pressed {
-    opacity: 1;
+    opacity: 1 !important; /* Pokazane po wciśnięciu */
 }
 
 .ds4 .back { /* Share */
-    width: 45px; height: 66px;
-    background-position: -874px -792px;
-    left: 0; top: 0;
+    width: 45px !important; height: 66px !important;
+    background-position: -874px -792px !important;
+    left: 0 !important; top: 0 !important;
 }
 
 .ds4 .start { /* Options */
-    width: 44px; height: 66px;
-    background-position: -827px -792px;
-    left: 636px; top: 0;
-    float: none;
-    margin: 0;
+    width: 44px !important; height: 66px !important;
+    background-position: -827px -792px !important;
+    left: 636px !important; top: 0 !important;
+    float: none !important;
+    margin: 0 !important;
 }
 
 /* =========================================
    D-PAD (Krzyżak)
    ========================================= */
 .ds4 .dpad {
-    width: 229px;
-    height: 220px;
-    left: 136px;
-    top: 281px;
-    position: absolute;
+    width: 229px !important;
+    height: 220px !important;
+    left: 136px !important;
+    top: 281px !important;
+    position: absolute !important;
 }
 
 .ds4 .face {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    position: absolute;
-    opacity: 0;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    position: absolute !important;
+    opacity: 0 !important; /* Ukryte domyślnie */
 }
 
 .ds4 .face.pressed {
-    background-position: -1px -1013px;
-    opacity: 1;
+    background-position: -1px -1013px !important;
+    opacity: 1 !important; /* Pokazane po wciśnięciu */
 }
 
 /* Zmuszamy wszystkie ramiona krzyżaka do zajmowania pełnego pola */
 .ds4 .face.up, .ds4 .face.down, .ds4 .face.left, .ds4 .face.right {
-    width: 229px; height: 220px;
-    left: 0; top: 0;
-    bottom: auto; right: auto;
-    margin: 0; padding: 0;
+    width: 229px !important; height: 220px !important;
+    left: 0 !important; top: 0 !important;
+    bottom: auto !important; right: auto !important;
+    margin: 0 !important; padding: 0 !important;
 }
 
 /* =========================================
    BUMPERY (L1 / R1)
    ========================================= */
 .ds4 .bumpers {
-    width: 1052px;
-    height: 108px;
-    left: 146px;
-    top: 75px;
-    position: absolute;
+    width: 1052px !important;
+    height: 108px !important;
+    left: 146px !important;
+    top: 75px !important;
+    position: absolute !important;
 }
 
 .ds4 .bumper {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    position: absolute;
-    opacity: 0;
-    transform: none;
-    margin: 0;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    position: absolute !important;
+    opacity: 0 !important; /* Ukryte domyślnie */
+    transform: none !important;
+    margin: 0 !important;
 }
 
 .ds4 .bumper.pressed {
-    opacity: 1;
+    opacity: 1 !important; /* Pokazane po wciśnięciu */
 }
 
 .ds4 .bumper.left {
-    width: 206px; height: 108px;
-    background-position: -409px -792px;
-    left: 0; top: 0;
-    float: none;
+    width: 206px !important; height: 108px !important;
+    background-position: -409px -792px !important;
+    left: 0 !important; top: 0 !important;
+    float: none !important;
 }
 
 .ds4 .bumper.right {
-    width: 206px; height: 108px;
-    background-position: -618px -792px;
-    left: 846px; top: 0;
-    float: none;
+    width: 206px !important; height: 108px !important;
+    background-position: -618px -792px !important;
+    left: 846px !important; top: 0 !important;
+    float: none !important;
 }
 
 /* =========================================
    TRIGGERY (L2 / R2)
    ========================================= */
 .ds4 .triggers {
-    width: 1010px;
-    height: 104px;
-    left: 167px;
-    top: 0;
-    position: absolute;
+    width: 1010px !important;
+    height: 104px !important;
+    left: 167px !important;
+    top: 0 !important;
+    position: absolute !important;
 }
 
 .ds4 .trigger {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
-    position: absolute;
-    opacity: 0;
-    transform: none;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
+    position: absolute !important;
+    opacity: 0 !important; /* Ukryte domyślnie */
+    transform: none !important;
 }
 
-/* GamepadViewer domyślnie podmienia inline opacity dla triggerów zależnie od nacisku, więc to jest tu idealne */
+.ds4 .trigger.pressed {
+    opacity: 1 !important; /* Pokazane po wciśnięciu */
+}
 
 .ds4 .trigger.left {
-    width: 187px; height: 104px;
-    background-position: -1112px -792px;
-    left: 0; top: 0;
-    float: none;
+    width: 187px !important; height: 104px !important;
+    background-position: -1112px -792px !important;
+    left: 0 !important; top: 0 !important;
+    float: none !important;
 }
 
 .ds4 .trigger.right {
-    width: 187px; height: 104px;
-    background-position: -922px -792px;
-    left: 823px; top: 0;
-    float: none;
+    width: 187px !important; height: 104px !important;
+    background-position: -922px -792px !important;
+    left: 823px !important; top: 0 !important;
+    float: none !important;
 }
