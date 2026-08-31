@@ -1,136 +1,236 @@
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 /* =========================================
-   1. BAZA KONTROLERA (Tryb editcss dla PS4)
+   BAZA KONTROLERA
    ========================================= */
 .controller.ds4 {
-    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat !important;
-    background-position: -1px -1px !important;
-    width: 1344px !important;
-    height: 788px !important;
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    background-position: -1px -1px;
+    width: 1344px;
+    height: 788px;
+    margin-left: 0;
+    margin-top: 0;
 }
 
-/* 2. ZEROWANIE KONTENERÓW */
-/* Niszczymy małe "pudełka" Gamepad Viewera, by móc używać koordynat z Twojego pliku na pełnym ekranie */
-.ds4 .abxy, .ds4 .arrows, .ds4 .dpad, .ds4 .sticks, .ds4 .bumpers, .ds4 .triggers, .ds4 .touchpad, .ds4 .meta {
-    position: absolute !important;
-    left: 0 !important; top: 0 !important;
-    width: 100% !important; height: 100% !important;
-    margin: 0 !important; padding: 0 !important;
-}
-
-/* 3. UKRYWANIE DOMYŚLNYCH PRZYCISKÓW */
-/* Usuwamy oryginalne grafiki wektorowe i podpinamy Twój plik, domyślnie ukrywając tła (nie dotyczy gałek i triggerów) */
-.ds4 span {
-    position: absolute !important;
-    border: none !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
-    background-image: none !important; 
-}
-
-/* 4. AKTYWACJA PRZYCISKÓW (POJAWIANIE SIĘ) */
-/* Skrypt GPV nakłada klasę .pressed w momencie wciśnięcia guzika */
-.ds4 .button.pressed, .ds4 .face.pressed, .ds4 .bumper.pressed, .ds4 .back.pressed, .ds4 .start.pressed {
-    background-image: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') !important;
-    background-repeat: no-repeat !important;
-}
-
-/* Triggery i gałki muszą mieć podpięte tło cały czas, bo skrypt steruje nimi płynnie */
-.ds4 .trigger, .ds4 .stick {
-    background-image: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') !important;
-    background-repeat: no-repeat !important;
+/* Ukrywamy touchpad i mały kwadracik "gracza", których nie potrzebujemy */
+.ds4 .quadrant, .ds4 .touchpad {
+    display: none;
 }
 
 /* =========================================
-   5. POZYCJONOWANIE ELEMENTÓW
+   GAŁKI ANALOGOWE
    ========================================= */
-.ds4 .button.a { /* Krzyżyk */
-    width: 99px !important; height: 91px !important;
-    left: 1047px !important; top: 431px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: 0px -792px !important;
-}
-.ds4 .button.b { /* Kółko */
-    width: 98px !important; height: 90px !important;
-    left: 1150px !important; top: 345px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -305px -792px !important;
-}
-.ds4 .button.x { /* Kwadrat */
-    width: 98px !important; height: 90px !important;
-    left: 946px !important; top: 349px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -102px -793px !important;
-}
-.ds4 .button.y { /* Trójkąt */
-    width: 99px !important; height: 91px !important;
-    left: 1050px !important; top: 257px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -203px -792px !important;
+.ds4 .sticks {
+    width: 578px;
+    height: 157px;
+    left: 389px;
+    top: 516px;
+    position: absolute;
 }
 
-.ds4 .bumper.left { /* L1 */
-    width: 206px !important; height: 108px !important;
-    left: 146px !important; top: 75px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -409px -792px !important;
-    transform: none !important;
+.ds4 .stick {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    background-position: -1359px -1px;
+    width: 157px;
+    height: 156px;
+    position: absolute;
 }
-.ds4 .bumper.right { /* R1 */
-    width: 206px !important; height: 108px !important;
-    left: 992px !important; top: 75px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -618px -792px !important;
-    transform: none !important;
+
+.ds4 .stick.left {
+    left: 0;
+    top: 1px;
+}
+
+.ds4 .stick.right {
+    left: 421px;
+    top: 0;
+}
+
+/* =========================================
+   GŁÓWNE PRZYCISKI (Krzyżyk, Kółko, itd.)
+   ========================================= */
+.ds4 .abxy {
+    width: 302px;
+    height: 265px;
+    left: 946px;
+    top: 257px;
+    position: absolute;
+}
+
+.ds4 .button {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    position: absolute;
+    opacity: 0;
+}
+
+.ds4 .button.pressed {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.ds4 .a { /* Krzyżyk */
+    width: 99px; height: 91px;
+    background-position: 0px -792px;
+    left: 101px; top: 174px;
+    bottom: auto; right: auto;
+}
+
+.ds4 .b { /* Kółko */
+    width: 98px; height: 90px;
+    background-position: -305px -792px;
+    left: 204px; top: 88px;
+    bottom: auto; right: auto;
+}
+
+.ds4 .x { /* Kwadrat */
+    width: 98px; height: 90px;
+    background-position: -102px -793px;
+    left: 0px; top: 92px;
+    bottom: auto; right: auto;
+}
+
+.ds4 .y { /* Trójkąt */
+    width: 99px; height: 91px;
+    background-position: -203px -792px;
+    left: 104px; top: 0px;
+    bottom: auto; right: auto;
+}
+
+/* =========================================
+   PRZYCISKI SYSTEMOWE (Share / Options)
+   ========================================= */
+.ds4 .arrows {
+    width: 680px;
+    height: 66px;
+    left: 332px;
+    top: 225px;
+    position: absolute;
+}
+
+.ds4 .back, .ds4 .start {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    position: absolute;
+    opacity: 0;
+}
+
+.ds4 .back.pressed, .ds4 .start.pressed {
+    opacity: 1;
 }
 
 .ds4 .back { /* Share */
-    width: 45px !important; height: 66px !important;
-    left: 332px !important; top: 225px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -874px -792px !important;
+    width: 45px; height: 66px;
+    background-position: -874px -792px;
+    left: 0; top: 0;
 }
+
 .ds4 .start { /* Options */
-    width: 44px !important; height: 66px !important;
-    left: 968px !important; top: 225px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -827px -792px !important;
-}
-
-.ds4 .trigger.left { /* L2 */
-    width: 187px !important; height: 104px !important;
-    left: 167px !important; top: 0px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -1112px -792px !important;
-    transform: none !important;
-}
-.ds4 .trigger.right { /* R2 */
-    width: 187px !important; height: 104px !important;
-    left: 990px !important; top: 0px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -922px -792px !important;
-    transform: none !important;
-}
-
-.ds4 .face { /* D-PAD */
-    width: 229px !important; height: 220px !important;
-    left: 136px !important; top: 281px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -1px -1013px !important;
+    width: 44px; height: 66px;
+    background-position: -827px -792px;
+    left: 636px; top: 0;
+    float: none;
+    margin: 0;
 }
 
 /* =========================================
-   6. GAŁKI ANALOGOWE - FIX RUCHU
+   D-PAD (Krzyżak)
    ========================================= */
-/* Usunięte !important na marginesach. Matematycznie odjęta połowa szerokości (78px) od punktów startowych (left/top), aby ruch płynnie działał. */
-.ds4 .stick.left {
-    width: 157px !important; height: 156px !important;
-    left: 311px !important; top: 439px !important; 
-    bottom: auto !important; right: auto !important;
-    background-position: -1359px -1px !important;
+.ds4 .dpad {
+    width: 229px;
+    height: 220px;
+    left: 136px;
+    top: 281px;
+    position: absolute;
 }
-.ds4 .stick.right {
-    width: 157px !important; height: 156px !important;
-    left: 732px !important; top: 438px !important;
-    bottom: auto !important; right: auto !important;
-    background-position: -1359px -1px !important;
+
+.ds4 .face {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    position: absolute;
+    opacity: 0;
+}
+
+.ds4 .face.pressed {
+    background-position: -1px -1013px;
+    opacity: 1;
+}
+
+/* Zmuszamy wszystkie ramiona krzyżaka do zajmowania pełnego pola */
+.ds4 .face.up, .ds4 .face.down, .ds4 .face.left, .ds4 .face.right {
+    width: 229px; height: 220px;
+    left: 0; top: 0;
+    bottom: auto; right: auto;
+    margin: 0; padding: 0;
+}
+
+/* =========================================
+   BUMPERY (L1 / R1)
+   ========================================= */
+.ds4 .bumpers {
+    width: 1052px;
+    height: 108px;
+    left: 146px;
+    top: 75px;
+    position: absolute;
+}
+
+.ds4 .bumper {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    position: absolute;
+    opacity: 0;
+    transform: none;
+    margin: 0;
+}
+
+.ds4 .bumper.pressed {
+    opacity: 1;
+}
+
+.ds4 .bumper.left {
+    width: 206px; height: 108px;
+    background-position: -409px -792px;
+    left: 0; top: 0;
+    float: none;
+}
+
+.ds4 .bumper.right {
+    width: 206px; height: 108px;
+    background-position: -618px -792px;
+    left: 846px; top: 0;
+    float: none;
+}
+
+/* =========================================
+   TRIGGERY (L2 / R2)
+   ========================================= */
+.ds4 .triggers {
+    width: 1010px;
+    height: 104px;
+    left: 167px;
+    top: 0;
+    position: absolute;
+}
+
+.ds4 .trigger {
+    background: url('https://purpellini.github.io/syf/pad_trans/dualsense.png') no-repeat;
+    position: absolute;
+    opacity: 0;
+    transform: none;
+}
+
+/* GamepadViewer domyślnie podmienia inline opacity dla triggerów zależnie od nacisku, więc to jest tu idealne */
+
+.ds4 .trigger.left {
+    width: 187px; height: 104px;
+    background-position: -1112px -792px;
+    left: 0; top: 0;
+    float: none;
+}
+
+.ds4 .trigger.right {
+    width: 187px; height: 104px;
+    background-position: -922px -792px;
+    left: 823px; top: 0;
+    float: none;
 }
