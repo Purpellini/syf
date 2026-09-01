@@ -1,0 +1,237 @@
+body {
+    background-color: #000000;
+    background-color: RGBA(0, 0, 0, 0);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.controller.xbox {
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) 0 0 no-repeat;
+    width: 2048px;
+    height: 1242px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* ===== ABXY (kontener domyślnie: left:488 top:192) ===== */
+.xbox .button {
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    opacity: 0;
+}
+
+.xbox .button.pressed {
+    opacity: 1 !important;
+    margin-top: 0 !important;
+    background-position-y: unset !important;
+    /* nadpisuje domyślny -48px z bazowego stylu */
+}
+
+.xbox .a {
+    width: 176px;
+    height: 154px;
+    left: 1025px;
+    top: 505px;
+    background-position: -1695px -2011px !important;
+}
+
+.xbox .b {
+    width: 176px;
+    height: 153px;
+    left: 1191px;
+    top: 368px;
+    background-position: -1872px -2010px !important;
+}
+
+.xbox .x {
+    width: 176px;
+    height: 153px;
+    left: 878px;
+    top: 383px;
+    background-position: -1341px -2010px !important;
+}
+
+.xbox .y {
+    width: 176px;
+    height: 154px;
+    left: 1045px;
+    top: 250px;
+    background-position: -1518px -2009px !important;
+}
+
+/* ===== BUMPERY LB/RB (kontener domyślnie: left:107 top:129) ===== */
+.xbox .bumper {
+    position: absolute !important;
+    float: none !important;
+    transform: none !important;
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    opacity: 0;
+}
+
+.xbox .bumper.pressed {
+    opacity: 1;
+}
+
+.xbox .bumper.left {
+    width: 514px;
+    height: 213px;
+    left: 90px;
+    top: 15px;
+    background-position: -0px -1459px;
+}
+
+.xbox .bumper.right {
+    width: 514px;
+    height: 213px;
+    left: 1229px;
+    top: 15px;
+    background-position: -515px -1459px;
+}
+
+/* ===== TRIGGERY LT/RT (kontener domyślnie: left:152 top:0) ===== */
+.xbox .trigger {
+    position: absolute !important;
+    float: none !important;
+    transform: none !important;
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    opacity: 0;
+}
+
+.xbox .trigger.pressed {
+    opacity: 1;
+}
+
+.xbox .trigger.left {
+    width: 260px;
+    height: 272px;
+    left: 71px;
+    top: 0px;
+    background-position: -1043px -1518px;
+}
+
+.xbox .trigger.right {
+    width: 260px;
+    height: 272px;
+    left: 1413px;
+    top: 0px;
+    background-position: -1304px -1518px;
+}
+
+/* ===== VIEW/MENU (select/start) (kontener domyślnie: left:306 top:264) ===== */
+.xbox .back,
+.xbox .start {
+    position: absolute !important;
+    float: none !important;
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    width: 111px;
+    height: 99px;
+    margin: 0;
+    opacity: 0;
+}
+
+.xbox .back.pressed,
+.xbox .start.pressed {
+    opacity: 1;
+}
+
+.xbox .back {
+    left: 508px;
+    top: 337px;
+    background-position: -1810px -1345px;
+}
+
+.xbox .start {
+    left: 817px;
+    top: 337px;
+    background-position: -1922px -1345px;
+}
+
+/* ===== GAŁKI (kontener domyślnie: left:144 top:239) ===== */
+.xbox .stick {
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    background-position: -1565px -1243px !important;
+    width: 244px;
+    height: 244px;
+}
+
+.xbox .stick.pressed {
+    background-position: -1565px -1490px !important;
+}
+
+.xbox .stick.left {
+    left: 166px;
+    top: 352px;
+}
+
+.xbox .stick.right {
+    left: 1047px;
+    top: 633px;
+}
+
+/* ===== DPAD (własny kontener dopasowany do grafiki) ===== */
+.xbox .dpad {
+    left: 570px;
+    top: 788px;
+    width: 337px;
+    height: 302px;
+}
+
+.xbox .face {
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) no-repeat;
+    opacity: 0;
+}
+
+.xbox .face.pressed {
+    opacity: 1;
+}
+
+.xbox .face.up {
+    width: 98px;
+    height: 143px;
+    left: 113px;
+    top: 18px;
+    background-position: -113px -2142px;
+}
+
+.xbox .face.down {
+    width: 93px;
+    height: 157px;
+    left: 118px;
+    top: 92px;
+    background-position: -451px -2216px;
+}
+
+.xbox .face.left {
+    width: 193px;
+    height: 78px;
+    left: 18px;
+    top: 92px;
+    background-position: -684px -2216px;
+}
+
+.xbox .face.right {
+    width: 196px;
+    height: 86px;
+    left: 118px;
+    top: 92px;
+    background-position: -1117px -2216px;
+}
+
+/* ===== GUIDE / XBOX LOGO (meta) ===== */
+.xbox .meta {
+    position: absolute;
+    left: 921px;
+    top: 357px;
+    width: 206px;
+    height: 180px;
+    background: url(https://purpellini.github.io/syf/xbox_trans/xbox-controller.png) -836px -1673px no-repeat;
+    opacity: 0;
+}
+
+.xbox .meta.pressed {
+    opacity: 1;
+}
+
+/* nieużywane w tym skinie */
+.xbox .touchpad {
+    display: none;
+}
