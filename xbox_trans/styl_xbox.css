@@ -20,10 +20,7 @@ body {
 }
 
 .xbox .button.pressed {
-    opacity: 1 !important;
-    margin-top: 0 !important;
-    background-position-y: unset !important;
-    /* nadpisuje domyślny -48px z bazowego stylu */
+    margin-top: 0;
 }
 
 .xbox .a {
@@ -169,10 +166,11 @@ body {
 
 /* ===== DPAD (własny kontener dopasowany do grafiki) ===== */
 .xbox .dpad {
-    left: 570px;
-    top: 788px;
-    width: 337px;
-    height: 302px;
+    left: 572px;
+    top: 817px;
+    width: 332px;
+    height: 267px;
+    transform-origin: 0 0;
 }
 
 .xbox .face {
@@ -233,5 +231,8 @@ body {
 
 /* nieużywane w tym skinie */
 .xbox .touchpad {
+    display: none;
+}
+.xbox .quadrant {
     display: none;
 }
