@@ -5,3 +5,110 @@
     background-position: center !important;
     background-size: contain !important;
 }
+
+.ds4 .dpad {
+    top: 183px;
+    left: 90px;
+    width: 115px;
+    height: 110px;
+}
+
+.ds4 .face {
+    opacity: 0;
+    background: none;   /* wyłączamy stary sprite całkowicie */
+}
+.ds4 .face.pressed {
+    opacity: 0.9;
+}
+
+.ds4 .face.down {
+    background: url('https://purpellini.github.io/syf/ds4_nier/arrow_down.png') no-repeat center;
+    background-size: contain;
+    top: 72.5px;
+    left: 37px;
+    width: 55px; !important;
+    height: 52px; !important;
+transform: rotate(180deg);
+}
+
+.ds4 .face.up {
+    background: url('https://purpellini.github.io/syf/ds4_nier/arrow_up.png') no-repeat center;
+    background-size: contain;
+    top: -2.5px;
+    left: 37px;
+    width: 55px; !important;
+    height: 52px; !important;
+transform: rotate(180deg);
+}
+.ds4 .face.left {
+    background: url('https://purpellini.github.io/syf/ds4_nier/arrow_right.png') no-repeat center;
+    background-size: contain;
+    top: 41px;
+    left: 1px;
+    width: 53px;
+    height: 40px;
+}
+.ds4 .face.right {
+    background: url('https://purpellini.github.io/syf/ds4_nier/arrow_left.png') no-repeat center;
+    background-size: contain;
+    top: 41px;
+    left: 75px;
+    width: 53px;
+    height: 40px;
+}
+
+
+.ds4 .trigger.left,
+ {
+    transform: scale(1.02);
+}
+
+.ds4 .trigger.right {
+    transform: scale(1.02);
+}
+
+.ds4 .bumper.left {
+    transform: scale(1.02);
+}
+
+.ds4 .bumper.right {
+    /* UWAGA: ten element już ma transform: rotateY(180deg) w oryginale!
+       Transformów NIE da się "dodawać" osobnymi regułami — nadpisują się nawzajem.
+       Trzeba połączyć oba w jednej linii: */
+    transform: rotateY(180deg) scale(1.02);
+}
+
+.ds4 .back,
+.ds4 .start{
+    transform: scale(1.03);
+}
+
+
+/* trójkąt - góra */
+.ds4 .y {
+    top: 0px;
+    left: 57.5px;
+}
+
+/* kwadrat - lewo */
+.ds4 .x {
+    top: 57.5px;
+    left: 0px;
+}
+
+/* kółko - prawo */
+.ds4 .b {
+    top: 57.5px;
+    left: 115.5px;
+}
+
+/* krzyżyk - dół */
+.ds4 .a {
+    top: 115.5px;
+    left: 57.5px;
+    bottom: auto;   /* wyłącza stare pozycjonowanie od dołu, żeby nie kolidowało */
+}
+
+
+
+
