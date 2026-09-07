@@ -68,14 +68,14 @@ transform: rotate(180deg);
 }
 
 .ds4 .bumper.left {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .ds4 .bumper.right {
     /* UWAGA: ten element już ma transform: rotateY(180deg) w oryginale!
        Transformów NIE da się "dodawać" osobnymi regułami — nadpisują się nawzajem.
        Trzeba połączyć oba w jednej linii: */
-    transform: rotateY(180deg) scale(1.02);
+    transform: rotateY(180deg) scale(1.03);
 }
 
 .ds4 .back,
@@ -86,28 +86,33 @@ transform: rotate(180deg);
 
 /* trójkąt - góra */
 .ds4 .y {
-    top: 0px;
-    left: 57.5px;
+    top: -0.5px;
+    left: 56.5px;
+transform: scale(1.02);
 }
 
 /* kwadrat - lewo */
 .ds4 .x {
-    top: 57.5px;
+    top: 57px;
     left: 0px;
+    transform: scale(1.02);
 }
 
 /* kółko - prawo */
 .ds4 .b {
-    top: 57.5px;
+    top: 57px;
     left: 115.5px;
+        transform: scale(1.02);
 }
 
 /* krzyżyk - dół */
 .ds4 .a {
-    top: 115.5px;
+    top: 114.5px;
     left: 57.5px;
     bottom: auto;   /* wyłącza stare pozycjonowanie od dołu, żeby nie kolidowało */
+        transform: scale(1.02);
 }
+
 
 
 
