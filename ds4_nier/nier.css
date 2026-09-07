@@ -142,4 +142,7 @@ transform: scale(1.02);
 .ds4 .stick.pressed::after {
     opacity: 1;
 }
+.ds4 .touchpad.pressed {
+    opacity: 0.6
+}
 
