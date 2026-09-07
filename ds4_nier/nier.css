@@ -15,7 +15,7 @@
 
 .ds4 .face {
     opacity: 0;
-    background: none;   /* wyłączamy stary sprite całkowicie */
+    background: none; 
 }
 .ds4 .face.pressed {
     opacity: 0.9;
@@ -58,7 +58,7 @@ transform: rotate(180deg);
 }
 
 
-.ds4 .trigger.left,
+.ds4 .trigger.left
  {
     transform: scale(1.02);
 }
@@ -72,9 +72,6 @@ transform: rotate(180deg);
 }
 
 .ds4 .bumper.right {
-    /* UWAGA: ten element już ma transform: rotateY(180deg) w oryginale!
-       Transformów NIE da się "dodawać" osobnymi regułami — nadpisują się nawzajem.
-       Trzeba połączyć oba w jednej linii: */
     transform: rotateY(180deg) scale(1.03);
 }
 
@@ -109,11 +106,40 @@ transform: scale(1.02);
 .ds4 .a {
     top: 114.5px;
     left: 57.5px;
-    bottom: auto;   /* wyłącza stare pozycjonowanie od dołu, żeby nie kolidowało */
+    bottom: auto;   
         transform: scale(1.02);
 }
 
+.ds4 .stick {
+    width: 94px;
+    height: 94px;
+    position: absolute; 
+    background: url('https://purpellini.github.io/syf/ds4_nier/stick_white.png') no-repeat center;
+    background-size: contain;
+}
 
+.ds4 .stick::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
 
+.ds4 .stick.left::after {
+    background-image: url('https://purpellini.github.io/syf/ds4_nier/stick_l3.png');
+}
+.ds4 .stick.right::after {
+    background-image: url('https://purpellini.github.io/syf/ds4_nier/stick_r3.png');
+}
 
+.ds4 .stick.pressed::after {
+    opacity: 1;
+}
 
