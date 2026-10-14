@@ -1,0 +1,203 @@
+body {
+    background-color: #000000;
+    background-color: RGBA(0, 0, 0, 0);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.controller.ds4 {
+    /* Animowane tło pada (zoptymalizowana wersja WebP pod niskie zużycie zasobów): */
+    background: url(dualsense_sekiro_animated.webp) 0 0 / 1344px 788px no-repeat;
+    width: 1344px;
+    height: 788px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* ===== ANALOG STICKI ===== */
+.ds4 .stick {
+    position: absolute;
+    background: url(dualsense_sekiro2.png) -1358px -1px no-repeat;
+    width: 157px;
+    height: 156px;
+}
+.ds4 .stick.pressed.left,
+.ds4 .stick.pressed.right {
+    background-position: -1358px -160px;
+}
+.ds4 .stick.left {
+    left: 161px;
+    top: 209px;
+}
+.ds4 .stick.right {
+    left: 582px;
+    top: 208px;
+}
+
+/* ===== ABXY ===== */
+.ds4 .button {
+    position: absolute !important;
+    background: url(dualsense_sekiro2.png) no-repeat;
+    opacity: 0;
+}
+.ds4 .button.pressed {
+    opacity: 1;
+}
+.ds4 .fbutton {
+    width: 84px;
+    height: 84px;
+}
+.ds4 .button.triangle {
+    left: 187px;
+    top: 0px;
+    background-position: -879px -905px;
+}
+.ds4 .button.circle {
+    left: 271px;
+    top: 84px;
+    background-position: -966px -905px;
+}
+.ds4 .button.cross {
+    left: 187px;
+    top: 168px;
+    background-position: -1140px -905px;
+}
+.ds4 .button.square {
+    left: 103px;
+    top: 84px;
+    background-position: -1053px -905px;
+}
+
+/* ===== TOUCHPAD ===== */
+.ds4 .touchpad {
+    position: absolute !important;
+    width: 476px;
+    height: 295px;
+    left: 434px;
+    top: 147px;
+    background: url(dualsense_sekiro2.png) -1518px -1px no-repeat;
+    opacity: 0;
+}
+.ds4 .touchpad.pressed {
+    opacity: 1;
+}
+
+/* ===== SHARE / OPTIONS ===== */
+.ds4 .arrows {
+    position: absolute;
+    width: 885px;
+    height: 150px;
+    top: 80px;
+    left: 228px;
+}
+.ds4 .back,
+.ds4 .start {
+    position: absolute !important;
+    background: url(dualsense_sekiro2.png) no-repeat;
+    opacity: 0;
+}
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    opacity: 1;
+}
+.ds4 .back {
+    width: 45px; height: 66px;
+    left: 105px; top: 83px;
+    background-position: -874px -861px;
+}
+.ds4 .start {
+    width: 44px; height: 66px;
+    left: 741px; top: 83px;
+    background-position: -827px -861px;
+}
+
+/* ===== DPAD ===== */
+.ds4 .dpad {
+    position: absolute !important;
+    left: 136px;
+    top: 281px;
+    width: 229px;
+    height: 220px;
+}
+.ds4 .face {
+    position: absolute !important;
+    background: url(dualsense_sekiro2.png) no-repeat;
+    opacity: 0;
+}
+.ds4 .face.pressed {
+    opacity: 1;
+}
+.ds4 .face.up {
+    width: 70px; height: 87px;
+    left: 77px; top: 8px;
+    background-position: -773px -1020px;
+}
+.ds4 .face.down {
+    width: 70px; height: 87px;
+    left: 84px; top: 128px;
+    background-position: -1012px -1140px;
+}
+.ds4 .face.left {
+    width: 93px; height: 71px;
+    left: 7px; top: 76px;
+    background-position: -239px -1088px;
+}
+.ds4 .face.right {
+    width: 92px; height: 71px;
+    left: 132px; top: 76px;
+    background-position: -596px -1088px;
+}
+
+/* ===== BUMPERY L1/R1 ===== */
+.ds4 .bumper {
+    position: absolute !important;
+    float: none !important;
+    background: url(dualsense_sekiro2.png) no-repeat;
+    opacity: 0;
+    transform: none !important;
+}
+.ds4 .bumper.pressed {
+    opacity: 1;
+}
+.ds4 .bumpers {
+    position: absolute;
+    width: 1030px;
+    height: 150px;
+    left: 156px;
+    top: 100px;
+}
+.ds4 .bumpers .bumper.left {
+    left: 0px; top: 0px;
+    width: 200px; height: 110px;
+    background-position: -7px -893px;
+}
+.ds4 .bumpers .bumper.right {
+    left: 830px; top: 0px;
+    width: 200px; height: 110px;
+    background-position: -210px -893px;
+}
+
+/* ===== TRIGGERY L2/R2 ===== */
+.ds4 .trigger {
+    position: absolute !important;
+    float: none !important;
+    background: url(dualsense_sekiro2.png) no-repeat;
+    opacity: 0;
+}
+.ds4 .triggers {
+    position: absolute;
+    width: 1030px;
+    height: 120px;
+    left: 156px;
+    top: 0px;
+}
+.ds4 .trigger.left {
+    left: 0px; top: 0px;
+    width: 200px; height: 100px;
+    background-position: -109px -893px;
+}
+.ds4 .trigger.right {
+    left: 830px; top: 0px;
+    width: 200px; height: 100px;
+    background-position: -312px -893px;
+}
