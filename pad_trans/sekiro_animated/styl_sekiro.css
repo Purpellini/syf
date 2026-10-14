@@ -13,7 +13,7 @@ body {
     margin-top: 0;
 }
 
-/* ===== ANALOG STICKI ===== */
+/* ===== ANALOG STICKI (kontener domyślnie: left:228 top:308) ===== */
 .ds4 .stick {
     position: absolute;
     background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) -1358px -1px no-repeat;
@@ -33,7 +33,7 @@ body {
     top: 208px;
 }
 
-/* ===== ABXY ===== */
+/* ===== ABXY (kontener domyślnie: left:567 top:159) ===== */
 .ds4 .button {
     position: absolute !important;
     background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
@@ -67,7 +67,7 @@ body {
     background-position: -203px -886px;
 }
 
-/* ===== CREATE / OPTIONS ===== */
+/* ===== CREATE / OPTIONS (kontener domyślnie: left:227 top:142) ===== */
 .ds4 .back,
 .ds4 .start {
     position: absolute !important;
@@ -93,7 +93,7 @@ body {
     background-position: -827px -861px;
 }
 
-/* ===== DPAD ===== */
+/* ===== DPAD (kontener: left:136 top:281 - już działało) ===== */
 .ds4 .dpad {
     left: 136px;
     top: 281px;
@@ -108,27 +108,27 @@ body {
     opacity: 1;
 }
 .ds4 .face.up {
-    width: 70px; height: 87px;
-    left: 77px; top: 8px;
-    background-position: -773px -1020px;
+    width: 82px; height: 99px;
+    left: 70px; top: 1px;
+    background-position: -767px -1014px;
 }
 .ds4 .face.down {
-    width: 70px; height: 87px;
-    left: 84px; top: 128px;
-    background-position: -1012px -1140px;
+    width: 83px; height: 99px;
+    left: 77px; top: 121px;
+    background-position: -1006px -1134px;
 }
 .ds4 .face.left {
-    width: 93px; height: 71px;
-    left: 7px; top: 76px;
-    background-position: -239px -1088px;
+    width: 105px; height: 83px;
+    left: 0px; top: 69px;
+    background-position: -233px -1082px;
 }
 .ds4 .face.right {
-    width: 92px; height: 71px;
-    left: 132px; top: 76px;
-    background-position: -596px -1088px;
+    width: 104px; height: 83px;
+    left: 125px; top: 69px;
+    background-position: -590px -1082px;
 }
 
-/* ===== BUMPERY L1/R1 ===== */
+/* ===== BUMPERY L1/R1 (kontener domyślnie: left:109 top:94) ===== */
 .ds4 .bumper {
     position: absolute !important;
     float: none !important;
@@ -150,7 +150,7 @@ body {
     background-position: -618px -903px;
 }
 
-/* ===== TRIGGERY L2/R2 ===== */
+/* ===== TRIGGERY L2/R2 (kontener domyślnie: left:109 top:0) ===== */
 .ds4 .trigger {
     position: absolute !important;
     float: none !important;
@@ -171,7 +171,7 @@ body {
     background-position: -922px -899px;
 }
 
-/* Ukrycie touchpada i wymuszenie pozycji Y dla przycisków */
+/* touchpada nie ma w tej grafice */
 .ds4 .touchpad {
     display: none;
 }
