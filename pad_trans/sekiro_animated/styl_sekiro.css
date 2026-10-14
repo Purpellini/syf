@@ -6,8 +6,8 @@ body {
 }
 
 .controller.ds4 {
-    /* Animowane tło pada (zoptymalizowana wersja WebP pod niskie zużycie zasobów): */
-    background: url(dualsense_sekiro_animated.webp) 0 0 / 1344px 788px no-repeat;
+    /* Animowane tło pada (WebP - zoptymalizowane pod niskie zużycie zasobów) */
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro_animated.webp) 0 0 / 1344px 788px no-repeat;
     width: 1344px;
     height: 788px;
     margin-left: 0;
@@ -17,7 +17,7 @@ body {
 /* ===== ANALOG STICKI ===== */
 .ds4 .stick {
     position: absolute;
-    background: url(dualsense_sekiro2.png) -1358px -1px no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) -1358px -1px no-repeat;
     width: 157px;
     height: 156px;
 }
@@ -37,7 +37,7 @@ body {
 /* ===== ABXY ===== */
 .ds4 .button {
     position: absolute !important;
-    background: url(dualsense_sekiro2.png) no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
     opacity: 0;
 }
 .ds4 .button.pressed {
@@ -75,7 +75,7 @@ body {
     height: 295px;
     left: 434px;
     top: 147px;
-    background: url(dualsense_sekiro2.png) -1518px -1px no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) -1518px -1px no-repeat;
     opacity: 0;
 }
 .ds4 .touchpad.pressed {
@@ -93,7 +93,7 @@ body {
 .ds4 .back,
 .ds4 .start {
     position: absolute !important;
-    background: url(dualsense_sekiro2.png) no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
     opacity: 0;
 }
 .ds4 .back.pressed,
@@ -121,7 +121,7 @@ body {
 }
 .ds4 .face {
     position: absolute !important;
-    background: url(dualsense_sekiro2.png) no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
     opacity: 0;
 }
 .ds4 .face.pressed {
@@ -152,7 +152,7 @@ body {
 .ds4 .bumper {
     position: absolute !important;
     float: none !important;
-    background: url(dualsense_sekiro2.png) no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
     opacity: 0;
     transform: none !important;
 }
@@ -181,7 +181,7 @@ body {
 .ds4 .trigger {
     position: absolute !important;
     float: none !important;
-    background: url(dualsense_sekiro2.png) no-repeat;
+    background: url(https://purpellini.github.io/syf/pad_trans/sekiro_animated/dualsense_sekiro2.png) no-repeat;
     opacity: 0;
 }
 .ds4 .triggers {
